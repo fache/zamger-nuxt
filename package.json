@@ -1,0 +1,19 @@
+{
+  "name": "zamger",
+  "version": "1.0.0",
+  "description": "zamger",
+  "author": "Faruk Slinic",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "gulp": "^4.0.2",
+    "nuxt": "^2.11.0"
+  },
+  "devDependencies": {}
+}
