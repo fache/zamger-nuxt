@@ -1,0 +1,6 @@
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:28:43] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:28:44] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:28:44] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:30:28] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:30:28] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
+[EEE] 127.0.0.1 - (0) - [2020-06-17 12:30:29] "SQL greska (ackend-v5/lib/DB.php : 106): Unknown column 's.naziv_en' in 'field list'"
