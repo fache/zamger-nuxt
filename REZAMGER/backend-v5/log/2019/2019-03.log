@@ -1,7 +1,0 @@
-[EEE] ::1 - faruk (3) - [2019-03-04 11:26:33] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-04 11:27:40] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-10 20:09:25] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-10 20:13:42] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-10 20:13:55] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-10 20:15:57] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
-[EEE] ::1 - faruk (3) - [2019-03-10 20:16:06] "SQL greska (ackend-v5\lib\DB.php : 108): Unknown column 's.naziv_en' in 'field list'"
