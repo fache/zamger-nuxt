@@ -1,2 +1,0 @@
-module Sis::AnnouncementHelper
-end

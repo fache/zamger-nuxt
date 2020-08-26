@@ -111,6 +111,7 @@ export default {
     components: {
     Headline, UrediPredmet
     },
+    middleware:'auth',
     beforeCreate(){
         //TODO smisliti nacin za redirect u slucaju da je korisnik logiran
         if(this.$store.state.active=="aktivan")console.log(this.$store.state.active);

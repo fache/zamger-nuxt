@@ -38,6 +38,7 @@ export default {
         else return "lijeviPadding";
       }
     },
+    middleware:'auth',
     beforeCreate(){
     },
     mounted (){

@@ -25,6 +25,7 @@ export default {
         if(this.$store.state.active=="aktivan")console.log(this.$store.state.active);
         else{console.log("neaktivan"); this.$router.push('/login');} 
     },
+    middleware:'auth',
     beforeMount (){
         this.predmet=this.$route.params.id;
         this.$store.state.predmetZaUredivanje=this.predmet;

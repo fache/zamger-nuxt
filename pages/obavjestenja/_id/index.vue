@@ -84,6 +84,7 @@ export default {
     components: {
     Headline, UrediPredmet
     },
+    middleware:'auth',
     beforeCreate(){
         console.log('5');
         //TODO smisliti nacin za redirect u slucaju da je korisnik logiran

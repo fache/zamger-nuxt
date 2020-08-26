@@ -117,6 +117,7 @@ export default {
     components: {
       Headline, Navigacija
     },
+    middleware:'auth',
     beforeCreate(){
     },
     mounted (){
@@ -238,7 +239,6 @@ export default {
                       // "scoringElement": 0.sid
                     };
                     axios.get(process.env.baseUrl+'/class/course/'+object.predmetId+'/student/'+student.id, { params },{ withCredentials: true }).then((resPrisutnosti) => {
-
                     }).catch((err, resPrisutnosti) => {
                         console.log(err);
                     });
