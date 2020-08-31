@@ -253,7 +253,7 @@ $wiring = array(
 		)
 	),
 
-	
+	//informacije o predmetu
 	array(
 		"path" => "course/{id}", 
 		"description" => "Course", 
@@ -323,7 +323,7 @@ $wiring = array(
 			'coursesForTeacher' => array('href' => 'course/teacher/{teacher}')
 		)
 	),
-
+	//predmeti nastavnika
 	array(
 		"path" => "course/teacher/{teacher}", 
 		"description" => "List of courses for teacher", 
@@ -383,7 +383,7 @@ $wiring = array(
 			'coursesForTeacher' => array('href' => 'course/teacher/{teacher}')
 		)
 	),
-	
+	//detalji o predmetu za studenta
 	array(
 		"path" => "course/{course}/student/{student}", 
 		"description" => "Details of specific course for student", 
@@ -452,7 +452,7 @@ $wiring = array(
 			"forStudent" => array("href" => "group/course/{course}/student/{student}/?year={year}"),
 		)
 	),
-	
+	//provjera da li student pripada grupi
 	array(
 		"path" => "group/{id}/student/{student}", 
 		"description" => "Check if student is enrolled in group", 
@@ -532,7 +532,7 @@ $wiring = array(
 			"forStudent" => array("href" => "group/course/{course}/student/{student}/?year={year}"),
 		)
 	),
-	
+	//lista grupa s nazivima i id-evima za predmet (bez virtualne grupe)
 	array(
 		"path" => "group/course/{course}", 
 		"description" => "Get list of student groups on course", 
@@ -556,7 +556,7 @@ $wiring = array(
 			"forStudent" => array("href" => "group/course/{course}/student/{student}/?year={year}"),
 		)
 	),
-	
+	//lista svih studenata sa predmeta + ocjene
 	array(
 		"path" => "group/course/{course}/allStudents", 
 		"description" => "Get all students on course (virtual group)", 
@@ -581,7 +581,7 @@ $wiring = array(
 			"forStudent" => array("href" => "group/course/{course}/student/{student}/?year={year}"),
 		)
 	),
-	
+	//lista grupa sa predmeta kojim student pripada (ukljucujuci virtualnu grupu)
 	array(
 		"path" => "group/course/{course}/student/{student}", 
 		"description" => "Get the list of groups that a student belongs to for given course (use student id 0 for current user)", 
@@ -740,7 +740,7 @@ $wiring = array(
 			"attendanceOnCourse" => array("href" => "class/course/{course}/student/{student}"),
 		)
 	),
-	
+	//informacije o casu (moguce da nije postavljeno vrijeme casa)
 	array(
 		"path" => "class/{id}", 
 		"description" => "Get class information", 
@@ -759,7 +759,7 @@ $wiring = array(
 			"attendanceOnCourse" => array("href" => "class/course/{course}/student/{student}"),
 		)
 	),
-	
+	//lista casova u grupi -id casa
 	array(
 		"path" => "class/group/{group}", 
 		"description" => "List of classes registered for group", 
@@ -777,7 +777,7 @@ $wiring = array(
 			"attendanceOnCourse" => array("href" => "class/course/{course}/student/{student}"),
 		)
 	),
-	
+	//id casa i id studenta - prisustvo: presence:1
 	array(
 		"path" => "class/{id}/student/{student}", 
 		"description" => "Get information on attendance of student", 
@@ -797,7 +797,7 @@ $wiring = array(
 			"attendanceOnCourse" => array("href" => "class/course/{course}/student/{student}"),
 		)
 	),
-	
+	//update prisustva
 	array(
 		"path" => "class/{id}/student/{student}", 
 		"description" => "Update attendance of student", 
@@ -822,7 +822,7 @@ $wiring = array(
 			"attendanceOnCourse" => array("href" => "class/course/{course}/student/{student}"),
 		)
 	),
-	
+	//set prisustva
 	array(
 		"path" => "class/{id}/student/{student}", 
 		"description" => "Set attendance of student", 

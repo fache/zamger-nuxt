@@ -86,7 +86,6 @@ export default {
     },
     middleware:'auth',
     beforeCreate(){
-        console.log('5');
         //TODO smisliti nacin za redirect u slucaju da je korisnik logiran
         if(this.$store.state.active=="aktivan")console.log(this.$store.state.active);
         else{console.log("neaktivan"); this.$router.push('/login');} 

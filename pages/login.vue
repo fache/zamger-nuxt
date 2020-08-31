@@ -54,16 +54,14 @@
         var object=this;
         axios.post(process.env.baseUrl+'/auth', { login: this.username, pass: this.password }, { withCredentials: true })
         .then((res) => {
-          console.log(res);
           if (res.data.success == "true")  {
             sessionStorage.setItem("zamger-auth",res.data.sid);
             document.cookie ="PHPSESSID = " + res.data.sid+ "; path = /; domain=localhost; Expires=Tue, 1 Jan 2040 00:00:00 GMT;"
             object.$store.state.userId = res.data.userid;
             object.$store.state.sid = res.data.sid;
             object.$store.state.active = "aktivan";
-            axios.get(process.env.baseUrl+'/person/3', { withCredentials: true })
+            axios.get(process.env.baseUrl+'/person/'+object.$store.state.userId, { withCredentials: true })
             .then((res) => {
-              console.log(res);
               if (res.statusText == "OK") {
                 object.$store.state.userIme = res.data.name;
                 object.$store.state.userPrezime = res.data.surname;

@@ -30,6 +30,8 @@
                     </div>
                     <div class="field">
                         <label>Datum:</label>
+                        <input type="text" id="vrijeme-casa" placeholder="Unesite vrijeme časa" data-input> 
+
                         <!-- <input data-toggle="datepicker">
                         <textarea data-toggle="datepicker"></textarea>
                         <div data-toggle="datepicker"></div> -->
@@ -91,6 +93,21 @@ export default {
         }
     },
     mounted(){
+        document.getElementById("vrijeme-casa").flatpickr({
+        enableTime: true,
+        time_24hr: true,
+        dateFormat: "d.m.Y H:i",
+        locale: {
+          firstDayOfWeek: 1,
+          weekdays: {
+            shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"]    
+          },
+          months: {
+            shorthand: ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Avg", "Sep", "Okt", "Nov", "Dec"],
+            longhand: [
+              "Januar", "Februar", "Mart", "April", "Maj", "Juni", "Juli", "Avgust", "Septembar", "Oktobar", "Novembar", "Decembar"]
+          }
+        }});
         // $('[data-toggle="datepicker"]').datepicker();
         axios.get(process.env.baseUrl+'/exam/course/'+this.predmet, { withCredentials: true }).then((res) => {
             for(let i=0; i<res.data.results.length; i++){
@@ -127,4 +144,11 @@ export default {
 }
 </script>
 <style scoped>
+#vrijeme-casa{
+  height: 34px;
+  border: 1px solid #dededf;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 300px;
+}
 </style>

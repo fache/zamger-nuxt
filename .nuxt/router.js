@@ -17,6 +17,7 @@ const _5c95d0b3 = () => interopDefault(import('../pages/sistembodovanja/_id/inde
 const _20aa78a4 = () => interopDefault(import('../pages/uredigrupe/_id/index.vue' /* webpackChunkName: "pages/uredigrupe/_id/index" */))
 const _794b2462 = () => interopDefault(import('../pages/zadace/_id/index.vue' /* webpackChunkName: "pages/zadace/_id/index" */))
 const _f1a94b66 = () => interopDefault(import('../pages/predmet/_idpredmeta/grupa/_idgrupe/index.vue' /* webpackChunkName: "pages/predmet/_idpredmeta/grupa/_idgrupe/index" */))
+const _9f52f364 = () => interopDefault(import('../pages/predmet/_idpredmeta/grupa/_idgrupe/student/_idstudenta/komentar/index.vue' /* webpackChunkName: "pages/predmet/_idpredmeta/grupa/_idgrupe/student/_idstudenta/komentar/index" */))
 const _f94ba9d8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -91,6 +92,10 @@ export const routerOptions = {
     path: "/predmet/:idpredmeta?/grupa/:idgrupe?",
     component: _f1a94b66,
     name: "predmet-idpredmeta-grupa-idgrupe"
+  }, {
+    path: "/predmet/:idpredmeta?/grupa/:idgrupe?/student/:idstudenta?/komentar",
+    component: _9f52f364,
+    name: "predmet-idpredmeta-grupa-idgrupe-student-idstudenta-komentar"
   }, {
     path: "/",
     component: _f94ba9d8,
