@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "gulp": "^4.0.2",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {}
 }
